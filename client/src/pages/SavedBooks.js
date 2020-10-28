@@ -16,7 +16,7 @@ const SavedBooks = () => {
 
         cache.writeQuery({
           query: GET_ME,
-          data: { me: { ...user } }
+          data: { me: { removeBook, ...user } }
         });
       } catch (e) {
         console.error(e);
@@ -35,7 +35,7 @@ const SavedBooks = () => {
     }
 
     try {
-      await removeBook({
+      const updatedUser = await removeBook({
         variables: { bookId }
       });
 
