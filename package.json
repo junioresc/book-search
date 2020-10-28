@@ -11,8 +11,7 @@
     "heroku-postbuild": "cd client && npm run build"
   },
   "repository": {
-    "type": "git",
-    "url": "git@work.github.com:arosenkranz/googlebooks-app.git"
+    "type": "git"
   },
   "keywords": [],
   "author": "",
